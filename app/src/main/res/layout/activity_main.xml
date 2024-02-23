@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,4 +16,77 @@
             android:textAlignment="center"
             android:background="#14AFEC"/>
     </com.google.android.material.appbar.AppBarLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="59dp"
+        android:orientation="vertical"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:padding="3dp"
+
+        >
+
+        <EditText
+            android:id="@+id/edtFirstNumber"
+            android:layout_marginEnd="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="عدد اول"
+            android:textColor="@color/black"
+            android:textColorHint="#000000"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_gravity="center"
+            android:textSize="55sp"/>
+        <EditText
+            android:id="@+id/edtSecondNumber"
+            android:layout_marginEnd="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="عدد دوم"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textColorHint="#000000"
+            android:inputType="number"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:layout_gravity="center"
+            android:textSize="55sp"/>
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="جواب"
+            android:textColor="#FF3B3B"
+            android:textAlignment="center"
+            android:textSize="35sp"/>
+        <Button
+            android:id="@+id/btnCalcute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حساب کردن"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+</FrameLayout>
