@@ -20,7 +20,12 @@ class MainActivity : AppCompatActivity() {
         btnSum=findViewById(R.id.btnCalcute)
         resultTv=findViewById(R.id.tvResult)
 
-
+btnSum.setOnClickListener {
+    val num1=firstNumber.text.toString().toInt()
+    val num2=secondNumber.text.toString().toInt()
+   // val sum=num1+num2
+    resultTv.text.sumOf { num1+num2 }
+}
 
 
 
