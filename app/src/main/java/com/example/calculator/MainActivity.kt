@@ -24,8 +24,8 @@ class MainActivity : AppCompatActivity() {
 btnSum.setOnClickListener {
     val num1=firstNumber.text.toString().toInt()
     val num2=secondNumber.text.toString().toInt()
-   // val sum=num1+num2
-    resultTv.text.sumOf { num1+num2 }
+    val sum=num1+num2
+    resultTv.text= sum.toString()
 }
 
 
