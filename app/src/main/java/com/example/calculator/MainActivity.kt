@@ -15,6 +15,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        firstNumber=findViewById(R.id.edtFirstNumber)
+        secondNumber=findViewById(R.id.edtSecondNumber)
+        btnSum=findViewById(R.id.btnCalcute)
+        resultTv=findViewById(R.id.tvResult)
+
+
+
 
 
     }
